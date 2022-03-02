@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="wrapper">
+        <div id="header">
+            <h1>Expense-Tracker</h1>
+            <p>Add A New Item:</p>
+        </div>
+        <p id="error-message"></p>
+            <form id="form-wrapper">
+                <div class="user-input">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="where was the expense made?">
+                </div>
+                <div class="user-input">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="user-input amount">
+                    <label for="amount">Amount:</label>
+                    <input type="text" placeholder="amount" id="amount">
+                </div>
+                <div class="wrapper-btn">
+                   <button class="btn">Add Expense</button>
+                </div>
+            </form>
+        
+           
+                <table>
+                    <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    </tr>
+
+                    <tbody id="tbody">
+
+                    </tbody>
+
+                </table>
+            
+              
+     </section>
+
+     <script src="index.js"></script>
+</body>
+</html>
